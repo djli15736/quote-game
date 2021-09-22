@@ -5,10 +5,12 @@ import { getRandomElement } from '../utilities/data';
 
 
 export function ControlPanel({setQuote}: {setQuote: (q: Quote)=>void}): JSX.Element {
+    function setRandomCard() {
+        setQuote(getRandomElement(QUOTES as Quote[]))
+    }
+    
     return <Col>
     <h1> Control Panel </h1>
-    <Button onClick={
-        () => setQuote(getRandomElement(QUOTES as Quote[]))
-    }>Swap Current Quote</Button>
+    <Button onClick={setRandomCard}>Swap Current Quote</Button>
     </Col>
 }
