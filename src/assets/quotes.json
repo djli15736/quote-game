@@ -1,6 +1,14 @@
-{
-    "ID": 1,
-    "Kind": "Iconic",
-    "Quote": "The things I do for love.",
-    "Source": "Jamie Lannister"
-}
+[
+    {
+        "ID": 1,
+        "Kind": "Iconic",
+        "Quote": "The things I do for love.",
+        "Source": "Jamie Lannister"
+    },
+    {
+        "ID": 2,
+        "Kind": "Iconic",
+        "Quote": "Chaos is a ladder",
+        "Source": "Petyr Baelish"
+    }
+]
