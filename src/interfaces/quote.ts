@@ -1,11 +1,11 @@
-export enum QuoteKind {
+/*export enum QuoteKind {
     Iconic = "Iconic Quote",
     Obscure = "Obscure Quote"
-}
+}*/
 
 export interface Quote {
     ID: number
-    Kind: QuoteKind
+    Kind: string
     Quote: string
     Source: string
 }

@@ -25,13 +25,16 @@ export function getLocalStorageUsers(): User[] {
     }
 }
 
-export function ControlPanel({setQuote, reveal, sourceRevealed}: {setQuote: (q: Quote)=>void, reveal: (r: boolean)=> void, sourceRevealed: boolean}): JSX.Element {
+export function ControlPanel({setQuote, reveal, sourceRevealed, deck, showAddCardModal}: 
+    {setQuote: (q: Quote)=>void, reveal: (r: boolean)=> void, sourceRevealed: boolean, 
+        showAddCardModal: (b:boolean) => void, deck: Quote[]}): JSX.Element {
     
     const [users, setUsers] = useState<User[]>(getLocalStorageUsers);
     
+    
     function setRandomCard() {
         reveal(false);
-        setQuote(getRandomElement(QUOTES as Quote[]))
+        setQuote(getRandomElement(deck))
     }
     
     function shuffleUsers() {
@@ -43,6 +46,17 @@ export function ControlPanel({setQuote, reveal, sourceRevealed}: {setQuote: (q: 
         localStorage.setItem(LOCAL_STORAGE_USERS, JSON.stringify(users));
     }
 
+    function addNewQuote() {
+        showAddCardModal(true);
+        /*const newQuote = {
+            ID: Math.random(),
+            Kind: "Custom",
+            Quote: window.prompt("What do you want the quote to be?") || "NO PROMPT",
+            Source: window.prompt("Who said it?") || "NO SOURCE"
+        }
+        setDeck([...deck, newQuote])*/
+    }
+
     return <Col>
     <h1> Control Panel </h1>
     <UserList users={users} setUsers={setUsers}></UserList>
@@ -50,5 +64,7 @@ export function ControlPanel({setQuote, reveal, sourceRevealed}: {setQuote: (q: 
     <Button onClick={() => reveal(!sourceRevealed)} className="m-4"> Reveal Source </Button>
     <Button onClick={shuffleUsers} className="m-4"> Shuffle Users</Button>
     <Button onClick={save} className="m-4" variant="success">Save</Button>
+    <Button onClick={addNewQuote} className="m-4" variant="success">Add New Quote</Button>
+
     </Col>
 }
