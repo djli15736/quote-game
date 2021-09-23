@@ -48,13 +48,6 @@ export function ControlPanel({setQuote, reveal, sourceRevealed, deck, showAddCar
 
     function addNewQuote() {
         showAddCardModal(true);
-        /*const newQuote = {
-            ID: Math.random(),
-            Kind: "Custom",
-            Quote: window.prompt("What do you want the quote to be?") || "NO PROMPT",
-            Source: window.prompt("Who said it?") || "NO SOURCE"
-        }
-        setDeck([...deck, newQuote])*/
     }
 
     return <Col>
