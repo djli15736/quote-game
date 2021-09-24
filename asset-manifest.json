@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/quote-game/static/css/main.1fabc03d.chunk.css",
+    "main.js": "/quote-game/static/js/main.2751265b.chunk.js",
+    "main.js.map": "/quote-game/static/js/main.2751265b.chunk.js.map",
+    "runtime-main.js": "/quote-game/static/js/runtime-main.cbffc5ac.js",
+    "runtime-main.js.map": "/quote-game/static/js/runtime-main.cbffc5ac.js.map",
+    "static/css/2.f2512455.chunk.css": "/quote-game/static/css/2.f2512455.chunk.css",
+    "static/js/2.fd52e7ee.chunk.js": "/quote-game/static/js/2.fd52e7ee.chunk.js",
+    "static/js/2.fd52e7ee.chunk.js.map": "/quote-game/static/js/2.fd52e7ee.chunk.js.map",
+    "static/js/3.4e3eaf3a.chunk.js": "/quote-game/static/js/3.4e3eaf3a.chunk.js",
+    "static/js/3.4e3eaf3a.chunk.js.map": "/quote-game/static/js/3.4e3eaf3a.chunk.js.map",
+    "index.html": "/quote-game/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/quote-game/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.1fabc03d.chunk.css.map": "/quote-game/static/css/main.1fabc03d.chunk.css.map",
+    "static/js/2.fd52e7ee.chunk.js.LICENSE.txt": "/quote-game/static/js/2.fd52e7ee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbffc5ac.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.fd52e7ee.chunk.js",
+    "static/css/main.1fabc03d.chunk.css",
+    "static/js/main.2751265b.chunk.js"
+  ]
+}
